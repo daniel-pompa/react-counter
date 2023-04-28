@@ -17,13 +17,17 @@ const Counter = ({ value }) => {
     <>
       <h2 id='counter'>{counter}</h2>
       <div className='buttons'>
-        <button onClick={handleAdd} className='btn'>
+        <button aria-label='add' onClick={handleAdd} className='btn'>
           +
         </button>
-        <button onClick={handleReset} className='btn btn-reset'>
+        <button
+          aria-label='reset'
+          onClick={handleReset}
+          className='btn btn-reset'
+        >
           Reset
         </button>
-        <button onClick={handleSubtract} className='btn'>
+        <button aria-label='subtract' onClick={handleSubtract} className='btn'>
           -
         </button>
       </div>
