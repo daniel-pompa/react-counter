@@ -1,6 +1,10 @@
+import PropTypes from 'prop-types';
 import reactLogo from './assets/images/react.svg';
+import Counter from './components/Counter';
 
-function App() {
+function App({ title }) {
+  const value = 0;
+
   return (
     <div className='app'>
       <div>
@@ -8,9 +12,18 @@ function App() {
           <img src={reactLogo} className='logo react' alt='React logo' />
         </a>
       </div>
-      <h1></h1>
+      <h1>{title}</h1>
+      <Counter value={value} />
     </div>
   );
 }
+
+App.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+App.defaultProps = {
+  title: 'Counter',
+};
 
 export default App;
