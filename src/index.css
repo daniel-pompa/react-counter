@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+:root {
+  background-color: #1e293b;
+  color: #00d8ff;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+div.app {
+  text-align: center;
+}
+
+div.app h1 {
+  text-transform: uppercase;
+}
+
+/* React logo */
+img.logo {
+  height: 5em;
+  padding: 1.5em;
+  animation: logo-spin 8s linear infinite;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Counter */
+h2#counter {
+  font-size: 2em;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 2.4em;
+}
+
+.btn {
+  background-color: #00d8ff;
+  border-radius: 0.2em;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.6em;
+  width: 2.5em;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #00bfe0;
+}
+
+.btn-reset {
+  width: 9em;
+}
+
+button {
+  margin-right: 0.6em;
+}
+
+button:last-of-type {
+  margin-right: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
