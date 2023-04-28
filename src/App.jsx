@@ -23,7 +23,7 @@ App.propTypes = {
 };
 
 App.defaultProps = {
-  title: 'Counter',
+  title: 'React Counter',
 };
 
 export default App;
